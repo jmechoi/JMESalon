@@ -1,0 +1,16 @@
+﻿@model IEnumerable<JMESalon.DAL.Stylist>
+
+@{
+    ViewBag.Title = "Stylists";
+}
+
+<div class="container">
+    <h2 class="page-header">Stylists</h2>
+
+    <div class="row is-flex">
+        @foreach (var item in Model)
+        {
+            @Html.Partial("_StylistsDisplayView", item)
+        }
+    </div>
+</div>

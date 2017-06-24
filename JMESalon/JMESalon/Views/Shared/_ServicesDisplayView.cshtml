@@ -1,0 +1,27 @@
+﻿<div class="service-panel col-md-4">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <div class="service-title">
+                <h4 class="text-center">@Model.Name</h4>
+            </div>
+        </div>
+        <div class="panel-body">
+            <img class="service-img img-responsive" src="@Model.associatedImg" />
+            <div class="service-desc">
+                @Model.description
+            </div>
+        </div>
+        <div class="panel-footer clearfix">
+            <div class="pull-right">
+                @if (Request.IsAuthenticated) {
+                <span style="padding-right: 30px;">
+                <a href="/Service/Edit/@Model.Id">Edit</a> |
+                    <a href="/Service/Details/@Model.Id">Details</a> |
+                    <a href="/Service/Delete/@Model.Id">Delete</a>
+            </span>}
+                $@Model.Cost &nbsp;
+                <a href="@Model.serviceLink" class="btn btn-primary services">Learn More</a>
+            </div>
+        </div>
+    </div>
+</div>

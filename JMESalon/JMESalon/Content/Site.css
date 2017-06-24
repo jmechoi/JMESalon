@@ -1,0 +1,283 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-color: #0a0a0a;
+    color: #818479;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    color: #9F894E;
+    border-bottom: 1px dotted #9F894E;
+}
+
+a:hover {
+    color: #B2A071;
+    border-bottom: 1px dotted #B2A071;
+    text-decoration: none;
+}
+
+span a {
+    color: #9F894E;
+    border-bottom: 1px dotted #9F894E;
+}
+
+span a:hover {
+    color: #B2A071;
+    border-bottom: 1px dotted #B2A071;
+    text-decoration: none;
+}
+
+.row {
+    margin-top:50px;
+    margin-bottom: 50px;
+}
+
+div .appt-bar {
+    margin-top: 100px;
+    margin-bottom: 20px;
+    color: #0a0a0a;
+    font-size: 1.6em;
+    padding: 10px 20px;
+    background-color: #9F894E;
+    min-width: 289px;
+}
+
+label {
+    color: #818479;
+}
+
+dl, dl.horizontal {
+    color :#818479;
+}
+
+.nav.navbar-nav {
+    text-transform: uppercase;
+}
+
+ul.nav.navbar-nav.navbar-right {
+    text-transform:none;
+}
+
+.navbar-inverse .navbar-nav > li > a, a.dropdown-toggle {
+    color: #9F894E;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, a.dropdown-toggle:hover, .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+    color: #0a0a0a;
+    background-color: #9F894E;
+}
+
+.navbar a {
+    border-bottom: none;
+}
+
+ul.nav.navbar-nav {
+        color: #9F894E;
+}
+
+.navbar-brand {
+    padding: 10px;
+}
+
+.navbar-brand>img {
+  padding: 0px;
+  margin: 0px;
+  width: auto;
+  height: 100%;
+}
+
+.navbar {
+    background-color: #0a0a0a;
+}
+.navbar-nav > li > .dropdown-menu {
+    background-color: #0a0a0a;
+}
+
+.dropdown-menu > li > a {
+    color: #9F894E;
+}
+
+.dropdown-menu > li > a:hover {
+    background-color:#9F894E;
+    color: #0a0a0a;
+}
+
+.jumbotron {
+    border-radius: 0px;
+    background-color: #151515;
+    background: url("../images/jme-salon-bg.svg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    min-height: 400px;
+
+    padding-top: 100px;
+    margin-bottom: 0px;
+}
+
+.jumbotron.j-services, .jumbotron,j-stylists{
+    min-height: 450px;
+}
+
+img.home-logo {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.footer {
+    
+}
+
+div.container.below-header {
+    background-color: #151515;
+    margin: 0px;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top:50px;
+    padding-bottom:100px;
+}
+
+p {
+    color: #818479;
+}
+
+hr {
+    border-top: 1px solid transparent;
+}
+
+.panel-default > .panel-heading {
+    background-color: #0c0c0c;
+    border-color: #0c0c0c;
+}
+
+div.panel-body {
+    background-color: #151515;
+}
+
+div.panel-footer {
+    background-color: #0c0c0c;
+    border-top: #0c0c0c;
+}
+
+div.panel-default, div.panel {
+    /*border-color: rgba(0, 0, 0, .05);*/
+    border: 1px solid transparent;
+    background-color: #0a0a0a;
+    border-radius: 0px;
+}
+
+div.service-desc {
+    color: #818479;
+}
+
+.page-header {
+    color: #9F894E;
+    border-bottom: 1px dashed #9F894E;
+    margin-bottom: 30px;
+}
+
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+h1.main-head, h1, h2, h3, h4, h5, h6 {
+    color: #9F894E;
+    font-family: 'Oswald', sans-serif;
+}
+
+span.appt-head {
+    font-family: 'Oswald', sans-serif;
+    color: #0a0a0a;
+}
+
+p.lead {
+    margin-top: 10px;
+    color: #9F894E;
+    font-size: 1.4em;
+}
+
+/* Buttons */
+.btn-default {
+    border-radius: 0px;
+    background-color: #151515;
+    border: 2px solid #9F894E;
+    color: #9F894E;
+}
+
+.btn-default:hover {
+    background-color: #9F894E;
+    border: 2px solid #9F894E;
+    color: #151515;
+}
+
+a.btn.btn-primary {
+    border-radius: 0px;
+    background-color: #151515;
+    border: 2px solid #9F894E;
+    color: #9F894E;
+}
+
+a.btn.btn-primary:hover {
+    background-color: #9F894E;
+    border: 2px solid #9F894E;
+    color: #151515;
+}
+
+div.btn.btn-primary.services {
+    border-radius: 0px;
+    background-color: #151515;
+    border: 2px solid #9F894E;
+    color: #9F894E;
+}
+
+div.btn.btn-primary.services:hover {
+    background-color: #9F894E;
+    border: 2px solid #9F894E;
+    color: #151515;
+}
+
+img.service-img {
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.row.is-flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.row.is-flex > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+p a  {
+    color: #9F894E;
+    border-bottom: 1px dotted #9F894E;
+}
+
+p a:hover {
+    color: #B2A071;
+    border-bottom: 1px dotted #B2A071;
+    text-decoration:none;
+}

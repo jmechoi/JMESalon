@@ -1,0 +1,134 @@
+﻿@model IEnumerable<JMESalon.DAL.Service>
+
+@{
+    ViewBag.Title = "Our Services";
+}
+
+
+<div class="container">
+    <h2 class="page-header">@ViewBag.Title</h2>
+
+    <div class="row is-flex">
+    @foreach (var item in Model)
+    {
+        @Html.Partial("_ServicesDisplayView", item)
+    }
+    </div>
+
+    <div class="row">
+        <div class="col-lg-12">
+            <a name="haircuts"></a>
+            <h3 id="haircuts">Haircuts</h3>
+            <p>We specialize in many different techniques and styles for cutting hair.</p>
+
+
+           <table class="table">
+            @foreach (var item in Model)
+            {
+                string search = "Hair Cut";
+                int found = item.Name.IndexOf(search);
+                if (found != -1)
+                {
+
+                    //
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Name)
+                    </td>
+                    <td>
+                        $@Html.DisplayFor(modelItem => item.Cost)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Hours)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.description)
+                    </td>
+                </tr>
+                }
+            }
+
+            </table>
+
+        </div>
+
+        <div class="col-lg-12">
+            <a name="haircolor"></a>
+            <h3 id="haircuts">Hair Color</h3>
+            <p>We specialize in many different techniques and styles for coloring hair.</p>
+
+
+            <table class="table">
+                @foreach (var item in Model)
+                {
+                    string search = "Balayage";
+                    int found = item.Name.IndexOf(search);
+                    if (found != -1)
+                    {
+
+                        //
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Name)
+                            </td>
+                            <td>
+                                $@Html.DisplayFor(modelItem => item.Cost)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Hours)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.description)
+                            </td>
+                        </tr>
+                    }
+                }
+
+            </table>
+
+        </div>
+
+        <div class="col-lg-12">
+            <a name="makeup"></a>
+            <h3 id="haircuts">Makeup</h3>
+            <p>We have a talented staff specializing in makeup and skin.</p>
+
+
+            <table class="table">
+                @foreach (var item in Model)
+                {
+                    string search = "Makeup";
+                    int found = item.Name.IndexOf(search);
+                    if (found != -1)
+                    {
+
+                        //
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Name)
+                            </td>
+                            <td>
+                                $@Html.DisplayFor(modelItem => item.Cost)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Hours)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.description)
+                            </td>
+                        </tr>
+                    }
+                }
+
+            </table>
+
+        </div>
+
+
+    </div>
+
+    <div class="row appt-bar">
+        <div class="col-lg-12 col-md-12 col-sm-12"><span class="appt-head">Make an appointment with us today!</span> <a class="pull-right btn btn-default" href="/Home/Contact">Make an Appointment</a></div>
+    </div>
+
+</div>
